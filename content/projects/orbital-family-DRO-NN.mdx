@@ -1,0 +1,67 @@
+---
+title: "Are NN Approaches Promising in the Analysis of Orbital Dynamics?"
+date: "2026-02-20"
+summary: "A Comparison of Data-driven Learning Algorithms to Predict Spacecraft Trajectories in the DRO Family"
+tags: ["Neural Networks", "Low Complexity Algorithms", "Astrodynamics"]
+featured: true
+order: 3
+github: ""
+demo: ""
+paper: ""
+thumbnail: "/projects/thumbnails/plane-crash.jpg"
+---
+
+## Overview
+
+The post is not complete or organized. this is a rough skeleton
+
+Generating precise, accurate, and efficient trajectories in the Earth-Moon circular restricted
+three-body problem (CR3BP) is crucial for long-term lunar missions, yet it remains challenging.
+A primary reason for this is that the CR3BP is an extremely nonlinear and chaotic system.
+Fortunately, neural networks present a promising approach for addressing such complex
+nonlinear challenges. Thus, this work addresses the challenge of solving a nonlinear system
+within the CR3BP framework to determine the trajectories of spacecraft within the Distant
+Retrograde Orbit (DRO) family using neural networks (NNs). For a comprehensive comparison
+analysis of trajectory generation, we present numerical simulations using four NNs trained,
+learned, and updated on the DRO family, specifically using ODE45, ODE78, ODE113, and
+the low-complexity algorithm (LCA) developed by the authors. Once the NNs are trained,
+learned, and updated, the proposed networks are utilized to predict the state trajectory of
+the spacecraft without using conventional trajectory generation in the CR3BP framework.
+Numerical results have shown that the adaptation of neural networks to the CR3BP framework
+determines spacecraft trajectory within the DRO family with higher accuracy compared to
+conventional trajectory generation algorithms.
+
+Overview of the architecture:
+
+<img
+  src="/projects/images/dro-overview.png"
+  alt="DRO Overview"
+  className="rounded-xl my-6"
+/>
+
+ODE45 and Low-Complexity Algorithm (LCA) to generate ground truth data:
+
+<img
+  src="/projects/images/ode45-vs-lca.png"
+  alt="DRO Overview"
+  className="rounded-xl my-6"
+/>
+
+NN Training Curves
+
+<img
+  src="/projects/images/ode45-lca-training-curves.png
+"
+  alt="DRO Overview"
+  className="rounded-xl my-6"
+/>
+
+Final Prediction comparison with ground truth:
+
+<img
+  src="/projects/images/dro-groundtruth-vs-predictions.png"
+  alt="DRO Overview"
+  className="rounded-xl my-6"
+/>
+
+I will write

@@ -1,0 +1,89 @@
+---
+title: "Can We Predict a Pilot's Cognitive State?"
+date: "2026-02-22"
+summary: "An Approach to Data-Driven Analysis and Predictive Modeling of Pilot Cognitive States for Enhanced Flight Safety"
+tags: ["Data Analytics", "Data Mining", "Machine Learning"]
+featured: true
+order: 2
+github: ""
+demo: ""
+paper: ""
+thumbnail: "/projects/thumbnails/pilot.jpg"
+---
+
+## Project Objective
+
+(The post is incomplete and unstructured.)
+
+Utilize machine learning to classify different attentive states of pilots based on physiological signals during simulated flights
+
+Source: https://data.nasa.gov/dataset/flight-crew-physiological-data-for-crew-state-monitoring 
+NASA’s Flight Crew Physiological Data for Crew State Monitoring
+18 pilots (10 clean sets were filtered out)
+
+Controlled Experiments (3 classes)
+- Channelized Attention (CA)
+- Diverted Attention (DA)
+- Startle/Surprise (SS)
+- Line Oriented Flight Training (LOFT)
+
+Sensors (23 Attributes)
+- 20 EEG channels, ECG (heart), GSR (skin response), R (respiration)
+- Captured using NeXus-10 system
+
+Dataset complexity ‼ 
+- 23 features, time-series data, subtle feature variations, noise data, and high overlap between classes, large dataset
+
+
+Visualization of the dataset. The dataset was a time series data of noisy biological signals
+<img
+  src="/projects/images/pilot-data-visualization.png"
+  alt="datamining 1"
+  className="rounded-xl my-6"
+/>
+
+The dataset distribution was highly imbalanced
+
+<img
+  src="/projects/images/pilot-data-distribution.png"
+  alt="datamining 1"
+  className="rounded-xl my-6"
+/>
+
+Dataset was large. needed preprocessing. we using rolling and moving average for sampling.
+
+<img
+  src="/projects/images/pilot-data-pre-processing.png"
+  alt="datamining 1"
+  className="rounded-xl my-6"
+/>
+
+Dataset after cleaning
+
+<img
+  src="/projects/images/pilot-data-data-cleaning.png"
+  alt="datamining 1"
+  className="rounded-xl my-6"
+/>
+
+Testing different models
+
+<img
+  src="/projects/images/pilot-data-different-models.png"
+  alt="datamining 1"
+  className="rounded-xl my-6"
+/>
+
+Adaboost was accurate but slower. We tested with decision tree. We propose a cascading model for imbalanced data.
+
+<img
+  src="/projects/images/pilot-data-cascading.png"
+  alt="datamining 1"
+  className="rounded-xl my-6"
+/>
+
+<img
+  src="/projects/images/pilot-data-cascading-results.png"
+  alt="datamining 1"
+  className="rounded-xl my-6"
+/>
