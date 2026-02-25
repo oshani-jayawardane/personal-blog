@@ -179,7 +179,7 @@ export default function Home() {
             {/* Photo */}
             <div className="relative h-28 w-28 sm:h-32 sm:w-32 overflow-hidden rounded-3xl bg-zinc-100">
               <Image
-                src="/oshi.jpeg"
+                src="/oshi.png"
                 alt="Oshani profile photo"
                 fill
                 className="object-cover"
@@ -194,7 +194,7 @@ export default function Home() {
               </h1>
 
               <p className="text-sm sm:text-base lg:text-lg text-zinc-700">
-                Research Assistant | Embry-Riddle Aeronautical University
+                Grad Student | Ms. in Data Science
               </p>
 
               <div className="flex flex-wrap justify-center md:justify-start gap-3 pt-2 text-sm sm:text-base">
