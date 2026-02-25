@@ -179,7 +179,7 @@ export default function Home() {
             {/* Photo */}
             <div className="relative h-28 w-28 sm:h-32 sm:w-32 overflow-hidden rounded-3xl bg-zinc-100">
               <Image
-                src="/oshi.JPEG"
+                src="/oshi.jpeg"
                 alt="Oshani profile photo"
                 fill
                 className="object-cover"
