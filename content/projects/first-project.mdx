@@ -1,0 +1,65 @@
+---
+title: "IoT-Based Smart Monitoring Dashboard"
+date: "2026-02-20"
+summary: "An end-to-end IoT system integrating edge devices, MQTT communication, and a real-time analytics dashboard."
+tags: ["IoT", "Embedded Systems", "Web Development"]
+featured: true
+order: 2
+github: "https://github.com/your-repo"
+demo: ""
+paper: ""
+thumbnail: "/projects/thumbnails/iot.jpg"
+---
+
+## Overview
+
+This project involved building a full-stack IoT monitoring system,
+from hardware sensing nodes to a web-based analytics dashboard.
+
+The objective was to design a scalable architecture capable of
+real-time data transmission and visualization.
+
+## System Architecture
+
+The system consisted of:
+
+- ESP32-based sensing nodes  
+- MQTT protocol for lightweight communication  
+- A Node.js backend  
+- A web dashboard for real-time visualization  
+
+![System architecture](/projects/images/iot-architecture.jpg)
+
+## Key Technical Decisions
+
+### 1. MQTT for Communication
+
+MQTT was chosen due to:
+
+- Low bandwidth requirements  
+- Publish-subscribe flexibility  
+- Efficient handling of multiple devices  
+
+### 2. Real-Time Updates
+
+WebSockets were integrated to push live updates to the dashboard
+without manual refresh.
+
+### 3. Edge Filtering
+
+Basic preprocessing was performed at the device level to reduce
+network load and improve responsiveness.
+
+## Results
+
+The system successfully:
+
+- Supported multiple device streams  
+- Reduced latency using event-driven updates  
+- Provided intuitive visualizations for end users  
+
+## What I Would Improve
+
+- Add anomaly detection using lightweight ML  
+- Improve authentication mechanisms  
+- Optimize data persistence for long-term analytics  
