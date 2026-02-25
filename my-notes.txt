@@ -1,0 +1,16 @@
+git commands for future changes
+-------------------------------
+
+git add .
+git commit -m "Update content"
+git push
+
+
+Formspree
+---------
+Where I recieve emails/messages
+
+
+Deployed on Vercel
+-------------------
+https://personal-blog-git-main-oshani-jayawardanes-projects.vercel.app/
