@@ -1,4 +1,4 @@
----
+{/* ---
 title: "Beautifully Unsettling"
 date: "2026-01-14"
 tags: ["Movie Review", "Thoughts"]
@@ -14,4 +14,4 @@ I will write soon
   src="/blog/images/talented-mr-ripley.jpg"
   alt="A quiet moment"
   className="rounded-xl my-6"
-/>
+/> */}
